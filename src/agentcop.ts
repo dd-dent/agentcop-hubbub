@@ -1,4 +1,4 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env node
 import { readFileSync } from 'fs';
 
 const required = ["Project Map", "Functional Directives", "Style Rules"];
