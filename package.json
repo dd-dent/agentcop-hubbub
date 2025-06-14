@@ -1,10 +1,11 @@
 {
   "name": "agentcop-hubbub",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "scripts": {
     "build": "tsc",
     "test": "npm run lint && mocha -r ts-node/register \"tests/**/*.ts\"",
-    "lint": "ts-node src/agentcop.ts AGENTS.md"
+    "lint": "ts-node src/agentcop.ts AGENTS.md",
+    "prepublishOnly": "npm run build && npm test"
   },
   "bin": {
     "agentcop": "dist/agentcop.js"
@@ -16,6 +17,7 @@
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
     "chai": "^4.3.0",
+    "chalk": "^4.1.2",
     "eslint": "^8.57.0",
     "mocha": "^10.2.0",
     "ts-node": "^10.9.1",

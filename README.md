@@ -1,8 +1,10 @@
 # agentcop-hubbub
 
+[![CI](#)](#)
+
 A cheeky linter for AGENTS.md charters.
 
-**Install:** `npm i -g agentcop-hubbub` _(coming soon)_
+**Install:** `npm i -g agentcop-hubbub` _(once published)_
 
 ## Quick Start
 
