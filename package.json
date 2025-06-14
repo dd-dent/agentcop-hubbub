@@ -1,0 +1,7 @@
+{
+    "name": "agentcop-hubbub",
+    "version": "0.0.0",
+    "scripts": {
+        "test": "npm run lint && mocha"
+    }
+}

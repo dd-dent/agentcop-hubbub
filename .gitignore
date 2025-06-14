@@ -1,0 +1,24 @@
+# Node / TypeScript artefacts
+
+node\_modules/
+dist/
+\*.log
+
+# Coverage & build reports
+
+coverage/
+.nyc\_output/
+
+# OS noise
+
+.DS\_Store
+Thumbs.db
+
+# IDE folders
+
+.vscode/
+.idea/
+
+# Misc
+
+.env
