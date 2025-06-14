@@ -1,7 +1,20 @@
 {
-    "name": "agentcop-hubbub",
-    "version": "0.0.0",
-    "scripts": {
-        "test": "npm run lint && mocha"
-    }
+  "name": "agentcop-hubbub",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "npm run lint && mocha -r ts-node/register \"tests/**/*.ts\"",
+    "lint": "ts-node src/agentcop.ts AGENTS.md"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "chai": "^4.3.0",
+    "eslint": "^8.57.0",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.0"
+  }
 }
