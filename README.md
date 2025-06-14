@@ -37,4 +37,8 @@ create something new.
 2. Extend the `.grimoire` stories when you add features.
 3. Keep the tone playful and the pipelines green.
 
+## License
+
+MIT License - see [LICENSE](./LICENSE) file for details.  
+
 ---
