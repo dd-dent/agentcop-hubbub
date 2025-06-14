@@ -1,13 +1,17 @@
 {
   "name": "agentcop-hubbub",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "scripts": {
     "build": "tsc",
     "test": "npm run lint && mocha -r ts-node/register \"tests/**/*.ts\"",
-    "lint": "ts-node src/agentcop.ts AGENTS.md"
+    "lint": "ts-node src/agentcop.ts AGENTS.md",
+    "prepublishOnly": "npm run build && npm test"
   },
   "bin": {
     "agentcop": "dist/agentcop.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
   },
   "devDependencies": {
     "@types/chai": "^4.3.0",
@@ -20,5 +24,12 @@
     "mocha": "^10.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.4.0"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "AGENTS.md"
+  ]
 }
