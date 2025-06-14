@@ -1,6 +1,7 @@
 # agentcop-hubbub
 
-[![CI](https://github.com/dd-dent/agentcop-hubbub/actions/workflows/ci.yml/badge.svg)](https://github.com/dd-dent/agentcop-hubbub/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/agentcop-hubbub.svg)](https://www.npmjs.com/package/agentcop-hubbub)
+[![CI](https://github.com/dd-dent/agentcop-hubbub/actions/workflows/ci.yml/badge.svg)](https://github.com/dd-dent/agentcop-hubbub/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/agentcop-hubbub.svg)](https://www.npmjs.com/package/agentcop-hubbub) [![npm](https://img.shields.io/npm/l/agentcop-hubbub.svg)](https://www.npmjs.com/package/agentcop-hubbub)
+
 
 A cheeky linter for AGENTS.md charters.
 
