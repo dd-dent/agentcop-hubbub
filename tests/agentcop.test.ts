@@ -3,6 +3,7 @@ import { join } from 'path';
 import { expect } from 'chai';
 
 describe('AgentCop', function () {
+  this.timeout(6000);
   const cli = join(__dirname, '..', 'src', 'agentcop.ts');
 
   it('passes with a good AGENTS file', function (done) {
@@ -18,6 +19,33 @@ describe('AgentCop', function () {
     execFile('node', ['-r', 'ts-node/register', cli, file], (error, stdout, stderr) => {
       expect(error).to.be.an('Error');
       expect(stderr).to.contain('Pressure drop');
+      done();
+    });
+  });
+
+  it('fails on duplicate headings', function (done) {
+    const file = join(__dirname, 'fixtures', 'duplicate_headings.md');
+    execFile('node', ['-r', 'ts-node/register', cli, file], (error, stdout, stderr) => {
+      expect(error).to.be.an('Error');
+      expect(stderr).to.contain('duplicate top-level');
+      done();
+    });
+  });
+
+  it('fails on empty section', function (done) {
+    const file = join(__dirname, 'fixtures', 'empty_section.md');
+    execFile('node', ['-r', 'ts-node/register', cli, file], (error, stdout, stderr) => {
+      expect(error).to.be.an('Error');
+      expect(stderr).to.contain('section');
+      done();
+    });
+  });
+
+  it('fails when bash block lacks commands', function (done) {
+    const file = join(__dirname, 'fixtures', 'functional_no_command.md');
+    execFile('node', ['-r', 'ts-node/register', cli, file], (error, stdout, stderr) => {
+      expect(error).to.be.an('Error');
+      expect(stderr).to.contain('bash block');
       done();
     });
   });
