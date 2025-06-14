@@ -16,7 +16,9 @@ Thumbs.db
 
 # IDE folders
 
-.vscode/
+.vscode/  # ! tracked tasks
+!.vscode/tasks.json
+!.vscode/launch.json
 .idea/
 
 # Misc

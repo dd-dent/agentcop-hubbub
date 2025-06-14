@@ -2,8 +2,7 @@
 
 A cheeky linter for AGENTS.md charters.
 
-**Install:** `npm i -g agentcop-hubbub` *(coming soon)*
-
+**Install:** `npm i -g agentcop-hubbub` _(coming soon)_
 
 ## Quick Start
 
@@ -14,9 +13,15 @@ ts-node src/agentcop.ts AGENTS.md
 
 The CLI reports a **pressure drop** if required headings are missing.
 
+## VS Code
+
+The repo ships with `.vscode/tasks.json` so you can run `npm test` via the
+**AgentCop: Lint Repo** task. Failures show up in the Problems panel using the
+bundled Mocha matcher.
+
 ## Narrative Cellar
 
-The `.grimoire/` folder stores the lore behind each component. It is a cellar of 
+The `.grimoire/` folder stores the lore behind each component. It is a cellar of
 metaphors and history. Peek inside before changing code and add a note when you
 create something new.
 
