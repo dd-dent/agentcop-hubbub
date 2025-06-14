@@ -1,10 +1,10 @@
 # agentcop-hubbub
 
-[![CI](#)](#)
+[![CI](https://github.com/dd-dent/agentcop-hubbub/actions/workflows/ci.yml/badge.svg)](https://github.com/dd-dent/agentcop-hubbub/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/agentcop-hubbub.svg)](https://www.npmjs.com/package/agentcop-hubbub)
 
 A cheeky linter for AGENTS.md charters.
 
-**Install:** `npm i -g agentcop-hubbub` _(once published)_
+**Install:** `npm i -g agentcop-hubbub`
 
 ## Quick Start
 
